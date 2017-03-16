@@ -3,6 +3,9 @@
 #include "Eigen/Dense"
 
 class KalmanFilter {
+private:
+  Eigen::VectorXd predict_x(const Eigen::VectorXd &z);
+  
 public:
 
   // state vector

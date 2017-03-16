@@ -3,6 +3,32 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 
+## Sample Output
+```
+$ ls -F
+CMakeCache.txt          ExtendedKF*             cmake_install.cmake     output1.txt
+CMakeFiles/             Makefile                data/                   output2.txt
+CMakeLists.txt          README.md               ide_profiles/           src/
+Docs/                   build/                  output.txt
+$ ./ExtendedKF data/sample-laser-radar-measurement-data-1.txt output1.txt
+EKF: 
+Accuracy - RMSE:
+0.0651649
+0.0605365
+ 0.542884
+ 0.544191
+$ ./ExtendedKF data/sample-laser-radar-measurement-data-2.txt output2.txt
+EKF: 
+CalculateJacobian () - Error - Division by Zero
+predict_x: Unable to predict -- zero motion
+Accuracy - RMSE:
+0.185495
+0.190302
+0.476766
+0.804467
+$ 
+```
+
 ## Dependencies
 
 * cmake >= 3.5
